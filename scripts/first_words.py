@@ -18,7 +18,7 @@ if __name__ == '__main__':
     soundhandle.stopAll()
     
     rospack = rospkg.RosPack()
-    to_files=rospack.get_path('music_box')
+    to_files=rospack.get_path('sound_box')
     sleep(10)# This delay is needed because when robot wakes up
     rospy.loginfo('Attempt 1')
     soundhandle.playWave(to_files + "/audio/System_initialized.ogg")

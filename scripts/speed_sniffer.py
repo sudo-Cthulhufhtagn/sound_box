@@ -63,7 +63,7 @@ if __name__ == '__main__':
     soundhandle.stopAll()
     global to_files
     rospack = rospkg.RosPack()
-    to_files=rospack.get_path('music_box')+'/audio/'
+    to_files=rospack.get_path('sound_box')+'/audio/'
     sleep(2)
     rospy.Subscriber("cmd_vel", Twist, callback)
     rospy.spin()
